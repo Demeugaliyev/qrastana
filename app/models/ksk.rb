@@ -1,0 +1,2 @@
+class Ksk < ApplicationRecord
+end
