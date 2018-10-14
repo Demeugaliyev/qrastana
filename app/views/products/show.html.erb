@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Inventory:</strong>
+  <%= @product.inventory %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Buy date:</strong>
+  <%= @product.buy_date %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @product.category %>
+</p>
+
+<p>
+  <strong>Experation date:</strong>
+  <%= @product.experation_date %>
+</p>
+
+<p>
+  <strong>Route:</strong>
+  <%= @product.route_id %>
+</p>
+
+<p>
+  <strong>Which user:</strong>
+  <%= @product.which_user %>
+</p>
+
+<p>
+  <strong>When update:</strong>
+  <%= @product.when_update %>
+</p>
+
+<p>
+  <strong>Create date:</strong>
+  <%= @product.create_date %>
+</p>
+
+<p>
+  <strong>Plaints sum:</strong>
+  <%= @product.plaints_sum %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_14_175150) do
+ActiveRecord::Schema.define(version: 2018_10_14_180915) do
 
   create_table "ikomeks", force: :cascade do |t|
     t.string "info"
@@ -32,6 +32,21 @@ ActiveRecord::Schema.define(version: 2018_10_14_175150) do
     t.string "info"
     t.integer "phone"
     t.string "adress"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.integer "inventory"
+    t.string "name"
+    t.string "buy_date"
+    t.string "category"
+    t.string "experation_date"
+    t.string "route_id"
+    t.string "which_user"
+    t.string "when_update"
+    t.string "create_date"
+    t.integer "plaints_sum"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
