@@ -1,0 +1,2 @@
+class Plaint < ApplicationRecord
+end
