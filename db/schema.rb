@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_14_173420) do
+ActiveRecord::Schema.define(version: 2018_10_14_175029) do
+
+  create_table "ikomeks", force: :cascade do |t|
+    t.string "info"
+    t.integer "phone"
+    t.string "adress"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "ksks", force: :cascade do |t|
     t.string "info"
